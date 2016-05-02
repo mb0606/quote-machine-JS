@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Quote Machine</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+   
+    <div class="main-container">
+       <h1 class="text-center">RANDOM QUOTE MACHINE</h1>
+        <div class="quote-container">
+            <p class="quote-text text-center"></p>
+            <p class="said-by"></p>
+        </div>
+        <button class="random-quote">Random quote!</button><br>
+        <a href="https://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-text="I am playing with random quotes ">Tweet</a>
+    </div>
+    
+    <script>
+        window.twttr = (function(d, s, id) {
+          var js, fjs = d.getElementsByTagName(s)[0],
+            t = window.twttr || {};
+          if (d.getElementById(id)) return t;
+          js = d.createElement(s);
+          js.id = id;
+          js.src = "https://platform.twitter.com/widgets.js";
+          fjs.parentNode.insertBefore(js, fjs);
+ 
+          t._e = [];
+          t.ready = function(f) {
+            t._e.push(f);
+          };
+ 
+          return t;
+        }(document, "script", "twitter-wjs"));
+    </script> 
+    
+    
+    <script src="quotes.js"></script>
+    <script src="app.js"></script>
+    
+</body>
+</html>
